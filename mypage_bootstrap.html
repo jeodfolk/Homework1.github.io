@@ -1,0 +1,120 @@
+<!-- Joseph Woolfolk -->
+<!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+    
+                table, th, td 
+                    {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                    }
+                th, td 
+                    {
+                    padding: 15px;
+                    text-align: left;
+                    }
+                body
+                    {
+                    margin-left: 100px;
+                    }
+            </style>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+            <title>About Me</title>
+        </head>
+        <body style="padding-left: 10px">
+            <h1 class="container-fluid">Woolfolk, Joseph -
+            <small class="text-muted"> Software Development Tools and Methods</small>
+            </h1>
+            <p class="card" style="width: 600px">     
+                1. I've been face to face with a wild lion. 
+                <br>2. I used to disarm bombs.
+                <br>3. I hiked the entire Appalachian Trail.
+                <br><br>
+                I'm studying computer science because I'm very interested in technology and
+                <br> the future of technology. The other reason is that more and more items are going
+                <br> to be using some type of computer and I like to know how things work that are
+                <br> relevant in my life.
+            </p>
+
+            <h2>My Professional Profile</h2>
+            <a type="button" class="btn btn-outline-secondary" href="https://github.com/jeodfolk" target="_blank">GitHub Profile</a>
+                <br>
+                <br>
+            <div>
+                <img class="h-25 rounded-circle" style="width: 240px;" id="prof_pic" src="https://scontent-den4-1.xx.fbcdn.net/v/t1.0-9/67430220_10157258988097416_7102681017617481728_o.jpg?_nc_cat=110&_nc_oc=AQlm7szDRwSH4xjzmO9SfhxgzUrIquStpeLRAKRV_TQKQhbHXy8b7YlGQVZ3R82reuI&_nc_ht=scontent-den4-1.xx&oh=f083d816652d6775a69fdc2098d4a2db&oe=5E226BB7"
+                alt="profile picture" value="My Profile Picture">
+            </div>    
+                <br>
+
+            <h3>My Favorite Projects</h3>
+                <table class="table table-striped col-6" id="projects_table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Name of Projects</th>
+                            <th>Technologies Used</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td>Project Ariadne</td>
+                            <td>C++</td>
+                        </tr>
+                    <tr>
+                        <td>Final Dream</td>
+                        <td>C++</td>
+                    </tr>
+                </table>
+                <br>
+                <p>
+                    <button class="btn btn-dark col-3" type="button" data-toggle="collapse" data-target="#countries" aria-expanded="false" aria-controls="multiCollapseExample"> <h5>Countries Visited</h5></button>
+                    <button class="btn btn-dark col-3" type="button" data-toggle="collapse" data-target="#interests" aria-expanded="false" aria-controls="multiCollapseExample2"> <h5>My Interests</h5></button>
+                </p>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="collapse multi-collapse" id="countries">
+                            <div class="card card-body">
+                                <ul>
+                                    <li>Kenya</li>
+                                    <li>Netherlands</li>
+                                    <li>Over half of the United States</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="collapse multi-collapse" id="interests">
+                            <div class="card card-body">
+                                <ol>
+                                    <li>Innovative technology</li>
+                                    <li>Automobiles</li>
+                                    <li>Hiking</li>
+                                </ol>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#test_modal">Click Me! <sub>or not...</sub></button>
+            <div class="modal fade" id="test_modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">This button doesn't actually do anything</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Please close me.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
